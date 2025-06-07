@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <link rel="icon" type="image/png" href="assets/img/logo-superior.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Login milimotitas</title>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #c8becc;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-card {
+      background-color: #f6f4f7;
+      width: 300px;
+      padding: 30px 20px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .login-card img {
+      width: 120px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .login-card input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-bottom: 1px solid #999;
+      background: transparent;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .login-card input::placeholder {
+      color: #aaa;
+    }
+
+    .login-card .forgot {
+      display: block;
+      margin: 10px 0;
+      font-size: 12px;
+      color: #666;
+      text-decoration: none;
+    }
+
+    .login-card .buttons {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 20px;
+    }
+
+    .login-card button {
+      background-color: #5c4b68;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .error {
+      color: red;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login-card">
+    <img src="assets/img/logo.png" alt="Milimothitas Beauty Shop" />
+    <form id="loginForm">
+      <input type="text" id="usuario" placeholder="Usuario" />
+      <input type="password" id="contrasena" placeholder="Contraseña" />
+      <a href="#" class="forgot">¿olvidó su contraseña?</a>
+      <div id="errorMsg" class="error"></div>
+      <div class="buttons">
+        <button type="submit">Ingresar</button>
+        <button type="button" onclick="window.location.href='../../index.html'">Regresar</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function (event) {
+      event.preventDefault(); // evita el envío por defecto
+
+      const usuario = document.getElementById("usuario").value.trim();
+      const contrasena = document.getElementById("contrasena").value.trim();
+      const errorMsg = document.getElementById("errorMsg");
+
+      if (usuario === "" || contrasena === "") {
+        errorMsg.textContent = "Debe completar todos los campos.";
+      } else {
+        errorMsg.textContent = "";
+        window.location.href = "dashboard.html";
+      }
+    });
+  </script>
+</body>
+
+</html>
