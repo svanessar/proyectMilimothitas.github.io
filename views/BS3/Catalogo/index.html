@@ -145,6 +145,35 @@
                         <div class="col-md-12">
                             <div class="card ">
                                 <!--Ingrese contenido aqui -->
+                                <!-- INICIO INTERFAZ DE CATÁLOGO -->
+                                <div style="padding: 20px; margin-bottom: 60px;">
+                                    <h2 style="font-weight: bold;">Catálogo</h2>
+                                    <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+                                        <input type="text" class="form-control" placeholder="Ingrese Código del producto" style="flex: 1;">
+                                        <button class="btn" style="background-color: #b497b6; color: white; min-width: 150px;">Editar</button>
+                                    </div>
+                                    <div style="background: white; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 10px;">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th><i class="fa fa-calendar"></i> Fecha</th>
+                                                    <th><i class="fa fa-barcode"></i> Código</th>
+                                                    <th>Producto</th>
+                                                    <th><i class="fa fa-asterisk"></i> Cantidad</th>
+                                                    <th><i class="fa fa-star"></i> Precio Und</th>
+                                                    <th><input type="checkbox" disabled> Eliminar</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- Aquí se agregarán dinámicamente los productos -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div style="display: flex; justify-content: flex-end; margin-top: 20px;">
+                                        <button class="btn" style="background-color: #b497b6; color: white; min-width: 150px;">Registrar Producto</button>
+                                    </div>
+                                </div>
+                                <!-- FIN INTERFAZ DE CATÁLOGO -->
                             </div>
                         </div>
 
@@ -162,26 +191,24 @@
                 <footer class="footer" style="background-color: #875778; padding: 30px 0; color: white; height: 35%;">
                     <div class="container">
                         <div class="row align-items-center">
-
+    
                             <!-- Izquierda: Nombre y redes sociales -->
                             <div class="col-md-6 text-start">
                                 <h4 style="font-weight: bold; margin-bottom: 10px;">Milimotitas</h4>
                                 <div class="social-icons d-flex align-items-center" style="gap: 15px;">
-                                    <a href="https://facebook.com" target="_blank"
-                                        style="color: white; font-size: 22px;">
+                                    <a href="https://facebook.com" target="_blank" style="color: white; font-size: 22px;">
                                         <i class="fab fa-facebook-f"></i>
                                     </a>
                                     <a href="https://wa.me/573001112233" target="_blank"
                                         style="color: white; font-size: 22px;">
                                         <i class="fab fa-whatsapp"></i>
                                     </a>
-                                    <a href="https://instagram.com" target="_blank"
-                                        style="color: white; font-size: 22px;">
+                                    <a href="https://instagram.com" target="_blank" style="color: white; font-size: 22px;">
                                         <i class="fab fa-instagram"></i>
                                     </a>
                                 </div>
                             </div>
-
+    
                             <!-- Derecha: Información de contacto -->
                             <div class="col-md-6 text-end">
                                 <div style="margin-bottom: 6px;">
@@ -194,9 +221,9 @@
                                     <i class="fas fa-envelope"></i> contacto@milimotitas.com
                                 </div>
                             </div>
-
+    
                         </div>
-
+    
                         <!-- Parte inferior centrada -->
                         <div class="text-center mt-4"
                             style="font-size: 13px; border-top: 1px solid #ccc; padding-top: 10px;">
