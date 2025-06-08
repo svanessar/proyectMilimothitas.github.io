@@ -24,6 +24,7 @@
 
     <!--  CSS for Demo Purpose, don't include it in your project     -->
     <link href="../assets/css/demo.css" rel="stylesheet" />
+    <link href="../../assets/css/reportes.css"
 
 
     <!--     Fonts and icons     -->
@@ -144,7 +145,97 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="card ">
-                                 <!--Ingrese contenido aqui -->
+                                 <div class="card">
+    <div class="header">
+        <h4 class="title">Mis ventas</h4>
+    </div>
+
+    <div class="content table-responsive">
+        <!-- Filtros por fecha -->
+        <div class="row mb-4" style="display: flex; gap: 15px; align-items: center; padding: 10px;">
+            <div class="col-md-2">
+                <label for="fecha-inicio">Fecha inicio</label>
+                <input type="date" id="fecha-inicio" class="form-control" />
+            </div>
+            <div class="col-md-2">
+                <label for="fecha-fin">Fecha fin</label>
+                <input type="date" id="fecha-fin" class="form-control" />
+            </div>
+            <div class="col-md-2" style="margin-top: 24px;">
+                <button class="btn btn-primary">Buscar</button>
+            </div>
+        </div>
+
+        <!-- Tabla de reporte -->
+        <table class="table table-hover table-striped">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Fecha</th>
+                    <th>Embajadora</th>
+                    <th>Cant productos</th>
+                    <th>Valor total</th>
+                    <th>Método de pago</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>000001</td>
+                    <td>03/05/2025</td>
+                    <td>Andrea camacho</td>
+                    <td>3</td>
+                    <td>$$$$</td>
+                    <td>Efectivo</td>
+                </tr>
+                <tr>
+                    <td>0000012</td>
+                    <td>28/04/2025</td>
+                    <td>Andrea camacho</td>
+                    <td>1</td>
+                    <td>$$$</td>
+                    <td>Tarjeta</td>
+                </tr>
+                <tr>
+                    <td>0000013</td>
+                    <td>25/04/2025</td>
+                    <td>Andrea camacho</td>
+                    <td>5</td>
+                    <td>$$$$</td>
+                    <td>Efectivo</td>
+                </tr>
+                <tr>
+                    <td>0000031</td>
+                    <td>20/04/2025</td>
+                    <td>Andrea camacho</td>
+                    <td>10</td>
+                    <td>$$$$</td>
+                    <td>Tarjeta</td>
+                </tr>
+                <tr>
+                    <td>01030123</td>
+                    <td>19/04/2025</td>
+                    <td>Andrea camacho</td>
+                    <td>2</td>
+                    <td>$$$$</td>
+                    <td>Tarjeta</td>
+                </tr>
+                <tr>
+                    <td>111111111</td>
+                    <td>13/02/2025</td>
+                    <td>Andrea camacho</td>
+                    <td>7</td>
+                    <td>$$$$</td>
+                    <td>Efectivo</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="text-right" style="margin-top: 20px;">
+            <button class="btn btn-danger">Salir</button>
+        </div>
+    </div>
+</div>
+
                             </div>
                         </div>
 
